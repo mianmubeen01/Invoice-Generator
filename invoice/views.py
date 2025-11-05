@@ -26,7 +26,7 @@ class InvoiceView(APIView):
         invoice_serializer.is_valid(raise_exception=True)
         invoice = invoice_serializer.save()
 
-        items_data = data.get("items", [])
+        items_data = data.get("items")
         created_items = []
         for item in items_data:
             item["invoice"] = invoice.id
