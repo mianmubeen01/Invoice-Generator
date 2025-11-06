@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='invoice',
             name='due_date',
-            field=models.DateField(default=invoice.models.Default_due_date),
+            field=models.DateField(default=invoice.models.default_due_date),
         ),
         migrations.AlterField(
             model_name='invoiceitems',
