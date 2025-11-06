@@ -1,7 +1,5 @@
-from django.shortcuts import render
-from .models import Company, Client, Invoice, InvoiceItem
-from .serializers import CompanySerializer, ClientSerializer, InvoiceSerializer, InvoiceItemSerializer
-from rest_framework.views import APIView
+from .models import Invoice
+from .serializers import  InvoiceSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import viewsets
