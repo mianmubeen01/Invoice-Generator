@@ -1,0 +1,45 @@
+# Byte-compiled 
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Virtual environments
+myenv/
+
+# Django stuff
+staticfiles/
+media/
+
+# SQLite database
+*.sqlite3
+
+# Unit test 
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+
+# Python tooling
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+ruff_cache/
+
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
