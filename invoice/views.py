@@ -1,5 +1,5 @@
 from .models import Invoice
-from .serializers import  InvoiceSerializer
+from .serializers import InvoiceSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import viewsets
@@ -8,7 +8,7 @@ class InvoiceView(viewsets.ModelViewSet):
     serializer_class = InvoiceSerializer
     queryset = Invoice.objects.all()
     
-    def create(self, request, *args, **Kwargs):
+    def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception =True)
         serializer.save()
